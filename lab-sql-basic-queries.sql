@@ -39,4 +39,11 @@ from film
 order by length desc
 limit 10;
 
--- Retrieve unique release years.
+--  Retrieve all actors with the first name "SCARLETT". 
+select * from actor
+	where first_name like "SCARLETT";
+    
+-- Retrieve all movies that have ARMAGEDDON in their title and have a duration longer than 100 minutes.
+select * from film
+	where title like "%ARMAGEDDON%"
+    and length > 100;
